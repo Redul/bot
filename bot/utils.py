@@ -2,6 +2,10 @@ from telebot import types
 
 
 def create_markup(answer_type):
+    """
+        :param answer_type: определяет тип создаваемой клавы
+        :return: Объект кастомной клавиатуры
+    """
     markup = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
     list_items = []
     if answer_type == "hello":
